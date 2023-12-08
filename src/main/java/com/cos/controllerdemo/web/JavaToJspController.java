@@ -15,12 +15,12 @@ public class JavaToJspController {
 	}
 	
 	@GetMapping("/jsp/java/model")
-	public String jspToJavaToModel(Model model) { // 함수의 파라메터에 Model을 선언하고
+	public String jspToJavaToModel(Model model) {
 		
 		User user = new User();
 		user.setUsername("ssar");
 		
-		model.addAttribute("username", user.getUsername()); // addAttribute 함수로 전달만 하면 됨.
+		model.addAttribute("username", user.getUsername());
 		
 		return "e";
 	}
